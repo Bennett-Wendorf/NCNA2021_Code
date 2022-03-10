@@ -1,0 +1,10 @@
+INT(1,64,r) SPACE INT(1,64,c) NEWLINE
+ASSERT(r * c >= 2)
+ASSERT(r * c <= 64)
+REP(r)
+  REP(c, SPACE)
+    INT(0,2) 
+  END
+  NEWLINE
+END
+EOF

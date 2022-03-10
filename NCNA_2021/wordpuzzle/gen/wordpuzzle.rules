@@ -1,0 +1,42 @@
+group = a
+  func = random_substr
+  num = 1
+  param
+    n = 100000, prob = 1.0, cmax = 1
+end
+
+group = ab
+  func = random_substr
+  num = 1
+  param
+    n = 100000, prob = 0.5, cmax = 2
+end
+
+group = randomSmall
+  func = random_substr
+  num = 3
+  param
+    n = 100, prob = 0.5, cmax = 2
+    n = 100, prob = 0.5, cmax = 3
+    n = 100, prob = 0.1, cmax = 5
+end
+
+group = randomLarge
+  func = random_substr
+  num = 6
+  param
+    n = 100000, prob = 0.0005, cmax = 2
+    n = 100000, prob = 0.0005, cmax = 3
+    n = 100000, prob = 0.0005, cmax = 5
+    n = 100000, prob = 0.0001, cmax = 26
+    n = 100000, prob = 0.0005, cmax = 26
+    n = 100000, prob = 0.001, cmax = 26
+end
+
+group = fib
+  func = fib_seq
+  num = 2
+  param
+    n = 100000, m = 5
+    n = 100000, m = 50
+end

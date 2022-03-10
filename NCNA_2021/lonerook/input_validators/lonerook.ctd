@@ -1,0 +1,6 @@
+INT(2,750,r) SPACE INT(2,750,c) NEWLINE
+REP(r)
+  REGEX("[.RKT]+", s) NEWLINE
+  ASSERT(STRLEN(s) == c)
+END
+EOF

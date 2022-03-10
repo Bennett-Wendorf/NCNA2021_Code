@@ -1,0 +1,5 @@
+name: Ultimate Binary Watch
+source: 2021/2022 Southern California Regional ICPC
+license: cc by-sa
+validator_flags: space_change_sensitive
+

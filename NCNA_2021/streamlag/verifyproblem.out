@@ -1,0 +1,12 @@
+Loading problem streamlag
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission bowen.cpp (C++) OK: AC [CPU: 0.00s @ test case secret/017-random-7]
+   AC submission hpy.py (Python 3 (pypy3)) OK: AC [CPU: 0.03s @ test case secret/010-allHalfMax]
+   AC submission ying.cs (C#) OK: AC [CPU: 0.01s @ test case secret/020-random-10]
+   Slowest AC runtime: 0.034, setting timelim to 1 secs, safety margin to 2 secs
+streamlag tested: 0 errors, 0 warnings

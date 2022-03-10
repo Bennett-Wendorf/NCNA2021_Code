@@ -1,0 +1,19 @@
+REGEX("[a-f]+", s) NEWLINE
+SET(n = STRLEN(s))
+ASSERT(n <= 2*10^5)
+INT(1,2*10^5,q) NEWLINE
+
+SET(qone = 0)
+REP(q)
+  INT(1,2,t) SPACE
+  IF(t == 1)
+    INT(1,n,l) SPACE INT(l,n,r)
+    SET(qone = 1)
+  ELSE
+    INT(1,n) SPACE REGEX("[a-f]")
+  END
+  NEWLINE
+END
+
+ASSERT(qone == 1)
+EOF

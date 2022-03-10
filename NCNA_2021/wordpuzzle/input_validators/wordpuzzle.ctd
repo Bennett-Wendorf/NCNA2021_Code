@@ -1,0 +1,7 @@
+REGEX("[a-z]+", s) NEWLINE
+REGEX("[a-z]+", t) NEWLINE
+EOF
+ASSERT(STRLEN(s) >= 1)
+ASSERT(STRLEN(s) <= 10^5)
+ASSERT(STRLEN(t) <= STRLEN(s))
+ASSERT(STRLEN(t) <= 50)

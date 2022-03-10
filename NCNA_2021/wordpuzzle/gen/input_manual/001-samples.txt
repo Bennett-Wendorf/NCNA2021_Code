@@ -1,0 +1,9 @@
+programming
+rgg
+==================== name:sample1
+aabbaa
+aba
+==================== name:sample2
+acca
+acac
+==================== name:sample3

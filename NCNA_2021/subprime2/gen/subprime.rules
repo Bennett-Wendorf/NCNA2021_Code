@@ -1,0 +1,2 @@
+# Create test cases following the generation rule specification format.
+# Each group calls a particular func with given parameters.

@@ -1,0 +1,39 @@
+group = randomTreeSmall
+  func = random_tree_case
+  num = 4
+  param
+    n = 2000, q = 2000, m = 2
+    n = 2000, q = 2000, m = 1000
+    n = 2000, q = 2000, m = 1000000
+    n = 2000, q = 2000, m = 1000000000
+end
+
+group = randomTree
+  func = random_tree_case
+  num = 5
+  param
+    n = 200000, q = 200000, m = 2417
+    n = 200000, q = 200000, m = 689377511
+    n = 200000, q = 200000, m = 798411196
+    n = 200000, q = 200000, m = 280159818
+    n = 200000, q = 200000, m = 464082821
+end
+
+group = chain
+  func = chain_case
+  num = 2
+  param
+    n = 200000, q = 200000, m = 689377511, long_query = 0
+    n = 200000, q = 200000, m = 1000000000, long_query = 1
+end
+
+group = flower
+  func = flower_case
+  num = 5
+  param
+    n = 199999, r = 1, q = 200000, m = 689377511, long_query = 0
+    n = 199999, r = 6, q = 200000, m = 1000000000, long_query = 0
+    n = 199999, r = 271, q = 200000, m = 1000000000, long_query = 0
+    n = 199999, r = 11111, q = 200000, m = 1000000000, long_query = 1
+    n = 199999, r = 66666, q = 200000, m = 1000000000, long_query = 1
+end

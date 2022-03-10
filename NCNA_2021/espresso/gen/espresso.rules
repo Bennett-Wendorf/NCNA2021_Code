@@ -1,0 +1,14 @@
+group = random
+  func = random_case
+  num = 9
+  param
+    n = 100, s = 10
+    n = 100, s = 11
+    n = 100, s = 12
+    n = 100, s = 13
+    n = 100, s = 15
+    n = 100, s = 17
+    n = 100, s = 24
+    n = 100, s = 131
+    n = 100, s = 200
+end

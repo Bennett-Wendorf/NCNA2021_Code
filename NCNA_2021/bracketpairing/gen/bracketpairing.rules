@@ -1,0 +1,23 @@
+group = random_small_q
+  func = random_valid
+  num = 10
+  param
+    n = 20, q = 1
+    n = 20, q = 2
+    n = 20, q = 3
+    n = 20, q = 4
+    n = 20, q = 5
+    ...
+end
+
+group = random_large_q
+  func = random_valid
+  num = 10
+  param
+    n = 20, q = 13
+    n = 20, q = 14
+    n = 20, q = 15
+    n = 20, q = 18
+    n = 20, q = 16
+    ...
+end

@@ -1,0 +1,13 @@
+Loading problem espresso
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission bowen.cpp (C++) OK: AC [CPU: 0.00s @ test case sample/1]
+   AC submission bowen.py (Python 3 (pypy3)) OK: AC [CPU: 0.02s @ test case secret/005-noRefill_a]
+   AC submission ying.cs (C#) OK: AC [CPU: 0.01s @ test case secret/014-random-8]
+   Slowest AC runtime: 0.021, setting timelim to 1 secs, safety margin to 2 secs
+   WA submission ying_excessive.cs (C#) OK: WA [test case: test case secret/004-everyRemain, CPU: 0.01s @ test case sample/2]
+espresso tested: 0 errors, 0 warnings

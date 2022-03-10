@@ -1,0 +1,17 @@
+Loading problem concertrehearsal
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission bowen.cpp (C++) OK: AC [CPU: 0.04s @ test case secret/024-randomLarge-6]
+   AC submission bowen.py (Python 3 (pypy3)) OK: AC [CPU: 0.08s @ test case secret/023-randomLarge-5]
+   AC submission hpy.cpp (C++) OK: AC [CPU: 0.06s @ test case secret/025-randomLarge-7]
+   Slowest AC runtime: 0.077, setting timelim to 1 secs, safety margin to 2 secs
+   TLE submission hpy_slow.cpp (C++) OK: TLE [test case: test case secret/017-all1, CPU: 3.00s @ test case secret/017-all1]
+   TLE submission hpy_slow2.cpp (C++) OK: TLE [test case: test case secret/017-all1, CPU: 3.00s @ test case secret/017-all1]
+   TLE submission naive.cpp (C++) OK: TLE [test case: test case secret/009-maxAnswer, CPU: 3.00s @ test case secret/009-maxAnswer]
+   TLE submission naive_linearNext.cpp (C++) OK: TLE [test case: test case secret/017-all1, CPU: 3.00s @ test case secret/017-all1]
+   TLE submission naive_noCycle.cpp (C++) OK: TLE [test case: test case secret/017-all1, CPU: 3.00s @ test case secret/017-all1]
+concertrehearsal tested: 0 errors, 0 warnings

@@ -1,0 +1,96 @@
+# Create test cases following the generation rule specification format.
+# Each group calls a particular func with given parameters.
+
+group = 64x0
+  func = random_case
+  num = 1 
+  param
+    r = 8, c = 8, vs = 0
+end
+
+group = 64x1
+  func = random_case
+  num = 1 
+  param
+    r = 8, c = 8, vs = 1
+end
+
+group = 64x2
+  func = random_case
+  num = 1 
+  param
+    r = 8, c = 8, vs = 2
+end
+
+group = 63x2
+  func = random_case
+  num = 1 
+  param
+    r = 7, c = 9, vs = 2
+end
+
+group = 62x2
+  func = random_case
+  num = 1 
+  param
+    r = 31, c = 2, vs = 2
+end
+
+group = 61x2
+  func = random_case
+  num = 1 
+  param
+    r = 1, c = 61, vs = 2
+end
+
+group = random01
+  func = random_case
+  num = 2
+  param
+    r = 8, c = 8, vs = 01
+    r = 6, c = 10, vs = 01
+end
+
+group = random02
+  func = random_case
+  num = 2
+  param
+    r = 8, c = 8, vs = 02
+    r = 10, c = 6, vs = 02
+end
+
+group = random12
+  func = random_case
+  num = 3
+  param
+    r = 8, c = 8, vs = 12
+    r = 7, c = 9, vs = 12
+    r = 9, c = 7, vs = 12
+end
+
+group = random012
+  func = random_case
+  num = 7
+  param
+    r = 8, c = 8, vs = 012
+    r = 7, c = 9, vs = 012
+    r = 9, c = 7, vs = 012
+    r = 1, c = 64, vs = 012
+    r = 64, c = 1, vs = 012
+    r = 2, c = 32, vs = 012
+    r = 32, c = 2, vs = 012
+end
+
+group = single0
+  func = single0
+  num = 7
+  param
+    r = 1, c = 63
+    r = 1, c = 64
+    r = 63, c = 1
+    r = 64, c = 1
+    r = 8, c = 8
+    r = 2, c = 32
+    r = 32, c = 2
+end
+

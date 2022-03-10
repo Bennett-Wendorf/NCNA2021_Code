@@ -1,0 +1,97 @@
+group = empty
+  func = random_case
+  num = 2
+  param
+    r = 50, c = 50, prob = 0
+    r = 13, c = 47, prob = 0
+end
+
+group = full
+  func = random_case
+  num = 2
+  param
+    r = 50, c = 50, prob = 1
+    r = 47, c = 13, prob = 1
+end
+
+group = stripe
+  func = random_case
+  num = 4
+  param
+    r = 49, c = 1, prob = 0
+    r = 49, c = 1, prob = 0.5
+    r = 3, c = 45, prob = 0
+    r = 3, c = 45, prob = 0.5
+end
+
+group = density1
+  func = random_case
+  num = 3
+  param
+    r = 50, c = 50, prob = 0.01
+    r = 13, c = 47, prob = 0.01
+    r = 40, c = 46, prob = 0.01
+end
+
+group = density5
+  func = random_case
+  num = 3
+  param
+    r = 50, c = 50, prob = 0.05
+    r = 47, c = 13, prob = 0.05
+    r = 40, c = 46, prob = 0.05
+end
+
+group = density50
+  func = random_case
+  num = 3
+  param
+    r = 50, c = 50, prob = 0.5
+    r = 47, c = 43, prob = 0.5
+    r = 44, c = 48, prob = 0.5
+end
+
+group = density75
+  func = random_case
+  num = 4
+  param
+    r = 50, c = 50, prob = 0.75
+    ...
+end
+
+group = density90
+  func = random_case
+  num = 4
+  param
+    r = 50, c = 50, prob = 0.9
+    ...
+end
+
+group = randomPath
+  func = random_path
+  num = 12
+  param
+    r = 50, c = 50, knot = 1
+    r = 50, c = 50, knot = 1
+    r = 50, c = 50, knot = 1
+    r = 50, c = 50, knot = 2
+    r = 50, c = 50, knot = 2
+    r = 50, c = 50, knot = 2
+    r = 50, c = 50, knot = 3
+    r = 50, c = 50, knot = 3
+    r = 50, c = 50, knot = 4
+    r = 50, c = 50, knot = 4
+    r = 50, c = 50, knot = 5
+    r = 50, c = 50, knot = 7
+end
+
+group = givenPath
+  func = given_path
+  num = 5
+  param
+    r = 50, c = 50, points = 1;1;49;48
+    r = 50, c = 50, points = 1;1;40;41
+    r = 50, c = 50, points = 1;1;48;44
+    r = 50, c = 50, points = 2;47;47;49
+    r = 50, c = 50, points = 3;39;47;49
+end

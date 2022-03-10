@@ -1,0 +1,13 @@
+Loading problem wordpuzzle
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission WordPuzzle.java (Java) OK: AC [CPU: 6.18s @ test case secret/011-ab]
+   AC submission bowen.cpp (C++) OK: AC [CPU: 0.22s @ test case secret/011-ab]
+   AC submission bowen.py (Python 3 (pypy3)) OK: AC [CPU: 1.96s @ test case secret/011-ab]
+   AC submission hpy.cpp (C++) OK: AC [CPU: 1.35s @ test case secret/011-ab]
+   Slowest AC runtime: 6.182, setting timelim to 9 secs, safety margin to 19 secs
+wordpuzzle tested: 0 errors, 0 warnings

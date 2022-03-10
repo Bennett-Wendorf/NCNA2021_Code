@@ -1,0 +1,28 @@
+\problemname{Word Puzzle}
+\illustration{0.4}{wordpuzzle.jpg}{Image from \href{https://pixabay.com/photos/crossword-background-think-819088/}{Pixabay}}
+
+Young Anna recently indulges in a word puzzle app on her phone.
+A word puzzle is a single English word with several blanks.
+Each blank represents a letter to be filled.
+For example, the word ``programming'' may appear as a puzzle {\tt p\_o\_rammin\_}.
+When solving a puzzle, Anna first clicks on a blank and then begins typing letters.
+The app automatically advances to the next blank once Anna types a letter.
+When there are no more blanks to the right of the filled letter, the app jumps back to the beginning of the word and advances from there.
+Anna keeps typing until all blanks are filled.
+To solve the puzzle {\tt p\_o\_rammin\_}, Anna may click on the first blank and type {\tt rgg}.
+Alternatively, she may click on the second blank and then type {\tt ggr}.
+
+One day Anna shows you a puzzle that she solved along with the sequence of letters she typed.
+Could you tell how many different puzzles can be the one that Anna solved?
+Two puzzles are different if they have blanks at different positions,
+e.g. if the puzzle word is {\tt programming} and Anna typed {\tt rgg}, there can be two possible puzzles: {\tt p\_o\_rammin\_} and {\tt pro\_\_ammin\_}.
+As the answer can be large, output the answer modulo $1\,000\,000\,007$.
+
+\section*{Input}
+The first line of input has a single string $p$ giving the puzzle word ($1 \leq |p| \leq 10^5$).
+The second line has a single string $s$ giving the letter sequence that Anna typed ($1 \leq |s| \leq \min(50, |p|)$).
+Both strings contain only lowercase English letters.
+
+\section*{Output}
+Output the number of different puzzles that can be the one solved by Anna, modulo $1\,000\,000\,007$.
+If Anna can not have typed $s$ to solve the puzzle, output zero.

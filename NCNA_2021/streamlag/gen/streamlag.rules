@@ -1,0 +1,35 @@
+group = allMax
+  func = random_case
+  num = 1
+  param
+    n = 1000, tmin = 1000000000, tmax = 1000000000
+end
+
+group = allOne
+  func = random_case
+  num = 1
+  param
+    n = 1000, tmin = 1, tmax = 1
+end
+
+group = allHalfMax
+  func = random_case
+  num = 1
+  param
+    n = 1000, tmin = 500000000, tmax = 500000000
+end
+
+group = random
+  func = random_case
+  num = 10
+  param
+    n = 1000, tmin = 1, tmax = 10
+    n = 1000, tmin = 1, tmax = 100
+    n = 1000, tmin = 1, tmax = 1000
+    n = 1000, tmin = 1, tmax = 10000
+    n = 1000, tmin = 1, tmax = 100000
+    n = 1000, tmin = 99999950, tmax = 1000000000
+    n = 1000, tmin = 99999000, tmax = 1000000000
+    n = 1000, tmin = 1, tmax = 1000000000
+    ...
+end

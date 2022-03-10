@@ -1,0 +1,15 @@
+Loading problem evensubstrings
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission Even_tgr.java (Java) OK: AC [CPU: 2.99s @ test case secret/008-random_abcdef-1]
+   AC submission bowen.cpp (C++) OK: AC [CPU: 1.91s @ test case secret/008-random_abcdef-1]
+   AC submission bowen_cio.cpp (C++) OK: AC [CPU: 1.74s @ test case secret/008-random_abcdef-1]
+   AC submission even2_tgr.cpp (C++) OK: AC [CPU: 1.19s @ test case secret/018-long_queries-1]
+   Slowest AC runtime: 2.990, setting timelim to 9 secs, safety margin to 18 secs
+   TLE submission naive_n2.cpp (C++) OK: TLE [test case: test case secret/018-long_queries-1, CPU: 19.00s @ test case secret/018-long_queries-1]
+   TLE submission naive_n3.cpp (C++) OK: TLE [test case: test case secret/006-random_all_a-1, CPU: 19.00s @ test case secret/006-random_all_a-1]
+evensubstrings tested: 0 errors, 0 warnings

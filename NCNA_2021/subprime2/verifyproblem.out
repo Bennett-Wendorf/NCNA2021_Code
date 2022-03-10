@@ -1,0 +1,12 @@
+Loading problem subprime2
+Checking config
+Checking statement
+Checking validators
+Checking graders
+Checking data
+Checking submissions
+   AC submission bowen.cpp (C++) OK: AC [CPU: 0.01s @ test case secret/035]
+   AC submission subprimep.c (C) OK: AC [CPU: 0.02s @ test case secret/036]
+   AC submission subprimep.py (Python 3 (pypy3)) OK: AC [CPU: 0.11s @ test case secret/027]
+   Slowest AC runtime: 0.109, setting timelim to 1 secs, safety margin to 2 secs
+subprime2 tested: 0 errors, 0 warnings

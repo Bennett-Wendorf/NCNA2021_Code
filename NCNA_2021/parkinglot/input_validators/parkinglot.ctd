@@ -1,0 +1,6 @@
+INT(1,50,r) SPACE INT(1,50,c) NEWLINE
+REP(r)
+  REGEX("[.#]+", s) NEWLINE
+  ASSERT(STRLEN(s) == c)
+END
+EOF

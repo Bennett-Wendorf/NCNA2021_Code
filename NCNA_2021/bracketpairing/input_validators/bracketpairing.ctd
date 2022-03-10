@@ -1,0 +1,4 @@
+REGEX("[()\[\]{}<>?]+", s) NEWLINE
+ASSERT(STRLEN(s) % 2 == 0)
+ASSERT(STRLEN(s) <= 20)
+EOF

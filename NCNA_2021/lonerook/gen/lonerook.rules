@@ -1,0 +1,97 @@
+group = capturePass_yes
+  func = capture_pass
+  num = 2
+  param
+    r = 742, c = 741, yes = 1, rotate = 0
+    r = 742, c = 741, yes = 1, rotate = 1
+end
+
+group = capturePass_no
+  func = capture_pass
+  num = 2
+  param
+    r = 742, c = 741, yes = 0, rotate = 0
+    r = 742, c = 741, yes = 0, rotate = 1
+end
+
+group = chess_yes
+  func = chess
+  num = 2
+  param
+    r = 750, c = 750, seed = 8, prob = 0.05, yes = 1
+    r = 750, c = 750, seed = 104, prob = 0.05, yes = 1
+end
+
+group = chess_no
+  func = chess
+  num = 2
+  param
+    r = 750, c = 750, seed = 1, prob = 0.01, yes = 0
+    r = 750, c = 750, seed = 0, prob = 0.015, yes = 0
+end
+
+group = zigzag
+  func = zigzag
+  num = 1
+  param
+    r = 744, c = 750
+end
+
+group = hilbert
+  func = hilbert
+  num = 1
+  param
+    r = 576, c = 576, fr = 747, fc = 747 
+end
+
+group = hilbert2
+  func = hilbert2
+  num = 1
+  param
+    r = 704, c = 704, fr = 748, fc = 748
+end
+
+group = groupOf4_yes
+  func = group_of_4
+  num = 4
+  param
+    r = 750, c = 750, seed = 0, prob = 0, yes = 1
+    r = 750, c = 750, seed = 42, prob = 0.01, yes = 1
+    r = 750, c = 750, seed = 42, prob = 0.02, yes = 1
+    r = 750, c = 750, seed = 42, prob = 0.05, yes = 1
+end
+
+group = groupOf4_no
+  func = group_of_4
+  num = 3
+  param
+    r = 750, c = 750, seed = 42, prob = 0.01, yes = 0
+    r = 750, c = 750, seed = 42, prob = 0.02, yes = 0
+    r = 750, c = 750, seed = 42, prob = 0.05, yes = 0
+end
+
+group = stripes_yes
+  func = stripes
+  num = 4
+  param
+    r = 750, c = 750, seed = 0, prob = 0, yes = 1
+    r = 750, c = 750, seed = 43, prob = 0.05, yes = 1
+    r = 750, c = 750, seed = 45, prob = 0.01, yes = 1
+    r = 750, c = 750, seed = 45, prob = 0.05, yes = 1
+end
+
+group = stripes_no
+  func = stripes
+  num = 3
+  param
+    r = 750, c = 750, seed = 43, prob = 0.05, yes = 0
+    r = 750, c = 750, seed = 44, prob = 0.05, yes = 0
+    r = 750, c = 750, seed = 45, prob = 0.05, yes = 0
+end
+
+group = fences
+  func = fences
+  num = 1
+  param
+    r = 750, c = 750
+end

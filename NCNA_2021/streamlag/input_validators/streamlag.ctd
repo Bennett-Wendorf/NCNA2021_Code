@@ -1,0 +1,9 @@
+INT(1,1000,n) NEWLINE
+REPI(i,n)
+  INT(1,10^9,t[i]) SPACE INT(1,n,v[i]) NEWLINE
+  IF(i > 0)
+    ASSERT(t[i] >= t[i - 1])
+  END
+END
+ASSERT(UNIQUE(v))
+EOF

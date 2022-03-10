@@ -1,0 +1,29 @@
+\problemname{Even Substrings}
+\illustration{0.4}{evensubstrings.jpg}{Image from \href{https://theconversation.com/testing-times-making-the-case-for-new-school-assessment-13076}{theconversation.com}}
+
+You are given a string $s[1..n]$ consisting of the first $6$ lowercase English letters between {\tt a} and {\tt f}.
+A substring is called {\it even} if every distinct letter in it appears an even number of times.
+For example, in {\tt abbacac} there are $4$ even substrings: {\tt abba}, {\tt bb}, {\tt acac}, {\tt bbacac}.
+If a same substring appears at different locations, they shall be counted multiple times,
+e.g. the string {\tt aaa} has $2$ even substrings {\tt aa}.
+
+You are to process $q$ queries of the following two types:
+\begin{enumerate}
+\item Given a range specified by two integers $l$ and $r$, count the number of even substrings in $s[l..r]$,
+the substring of $s$ starting at $s[l]$ and ending at $s[r]$ (both ends are inclusive).
+\item Given an index $i$ and a letter $x$ between {\tt a} and {\tt f}, change $s[i]$ to $x$.
+\end{enumerate}
+
+\section*{Input}
+The first line of input has a single string $s[1..n]$ ($1 \leq n \leq 2 \cdot 10^5$) consisting of letters between {\tt a} and {\tt f}.
+
+\noindent The second line of input has a single integer $q$ ($1 \leq q \leq 2 \cdot 10^5$), the number of queries.
+Each of the next $q$ lines gives one query:
+\begin{itemize}
+\item Type $1$ query has $1~l~r$ ($1 \leq l \leq r \leq n$).
+\item Type $2$ query has $2~i~x$ ($1 \leq i \leq n$), where $x$ is a letter between {\tt a} and {\tt f}.
+\end{itemize}
+There is at least one query of type $1$.
+
+\section*{Output}
+For each type $1$ query output the number of even substrings on a single line.

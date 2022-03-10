@@ -1,0 +1,29 @@
+\problemname{Tree Number Generator}
+\illustration{0.4}{treegenerator.jpg}{Image by \href{https://www.publicdomainpictures.net/en/view-image.php?image=165896&picture=fractal-forest-6}{Rajesh Misra}}
+
+One day Young Anna comes up with a whimsical idea of using a tree to create a number generator.
+The generator is created with a modulus $m$ and an internal tree of $n$ nodes numbered from $1$ to $n$.
+Each tree node is assigned a single digit between $0$ to $9$.
+The generator provides a method $Get(a, b)$ that can be used to produce an integer in $[0, m)$.
+The two arguments $a$ and $b$ specify two tree nodes.
+The generator walks the path from $a$ to $b$ in the tree, concatenates all the digits along the path (including the digits of node $a$ and $b$), and obtains a decimal integer $v$ as a result of such digit concatenation.
+Note that $v$ can be quite large and may contain leading zeroes.
+The return value of $Get(a, b)$ is $v$ modulo $m$.
+
+Given a tree and the value of $m$ to be used by Anna's number generator, calculate the return values of $q$ queries $Get(a, b)$.
+
+\section*{Input}
+The first line of input has three integers $n$ ($2 \leq n \leq 2 \cdot 10^5$), $m$ ($1 \leq m \leq 10^9$), and $q$ ($1 \leq q \leq 2 \cdot 10^5$).
+
+\noindent The next $n - 1$ lines describe the tree edges.
+Each line has two integers $x, y$ ($1 \leq x, y \leq n$) listing an edge connecting node $x$ and node $y$.
+It is guaranteed that those edges form a tree.
+
+\noindent The next $n$ lines each have a single digit between $0$ to $9$.
+The $i$th digit is assigned to node $i$.
+
+\noindent The next $q$ lines each have two integers $a, b$ ($1 \leq a, b \leq n$) specifying a query $Get(a, b)$.
+
+\section*{Output}
+For each $Get(a, b)$ query output its return value on a single line.
+ 

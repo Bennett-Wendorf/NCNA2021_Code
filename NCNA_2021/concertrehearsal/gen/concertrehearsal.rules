@@ -1,0 +1,40 @@
+# Create test cases following the generation rule specification format.
+# Each group calls a particular func with given parameters.
+
+group = randomSmall
+  func = random_case
+  num = 5
+  param
+    n = 1000, p = 1000, k = 1000, dmin = 1, dmax = 3
+    n = 1000, p = 1000, k = 1000, dmin = 1, dmax = 10
+    n = 1000, p = 1000, k = 1000, dmin = 40, dmax = 50
+    n = 1000, p = 1000, k = 1000, dmin = 1, dmax = 1000
+    n = 1000, p = 1000, k = 1000, dmin = 300, dmax = 1000
+end
+
+group = all1
+  func = random_case
+  num = 1
+  param
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 1, dmax = 1
+end
+
+group = largeRotate
+  func = random_case
+  num = 1
+  param
+    n = 200000, p = 999999999, k = 1000000000, dmin = 2, dmax = 2, fixed = 1
+end
+
+group = randomLarge
+  func = random_case
+  num = 7
+  param
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 1, dmax = 3
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 1, dmax = 10
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 40, dmax = 50
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 1, dmax = 1000
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 100000, dmax = 200000
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 1, dmax = 1000000000
+    n = 200000, p = 1000000000, k = 1000000000, dmin = 300000000, dmax = 1000000000
+end

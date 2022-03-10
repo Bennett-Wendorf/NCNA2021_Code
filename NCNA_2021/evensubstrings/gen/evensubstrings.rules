@@ -1,0 +1,64 @@
+group = random_small
+  func = random_case
+  num = 2
+  param
+    n = 1000, q = 50000, q_prob = 0.5, max_chars = 6
+    n = 1000, q = 50000, base_str = ababbab, q_prob = 0.5, max_chars = 2
+end
+
+group = random_all_a
+  func = random_case
+  num = 2
+  param
+    n = 200000, q = 200000, base_str = a, q_prob = 0.5, max_chars = 6
+    n = 200000, q = 200000, base_str = a, q_prob = 0.5, max_chars = 2
+end
+
+group = random_abcdef
+  func = random_case
+  num = 2
+  param
+    n = 200000, q = 200000, base_str = abcdef, q_prob = 0.9, max_chars = 6
+    n = 200000, q = 200000, base_str = abcdef, q_prob = 0.5, max_chars = 6
+end
+
+group = random
+  func = random_case
+  num = 3
+  param
+    n = 200000, q = 200000, q_prob = 0.5, max_chars = 2
+    n = 200000, q = 200000, q_prob = 0.5, max_chars = 3
+    n = 200000, q = 200000, q_prob = 0.5, max_chars = 6
+end
+
+group = stairs_ab
+  func = stairs
+  num = 1
+  param
+    n = 200000, q = 200000, base_str = ab, q_prob = 0.5, max_chars = 2
+end
+
+group = stairs_abcdef
+  func = stairs
+  num = 1
+  param
+    n = 200000, q = 200000, base_str = abcdef, q_prob = 0.5, max_chars = 6
+end
+
+group = stairs_random
+  func = stairs
+  num = 3
+  param
+    n = 200000, q = 200000, q_prob = 0.2, max_chars = 6
+    n = 200000, q = 200000, q_prob = 0.5, max_chars = 6
+    n = 200000, q = 200000, q_prob = 0.8, max_chars = 6
+end
+
+
+group = long_queries
+  func = long_queries
+  num = 2
+  param
+    n = 200000, q = 200000, base_str = ab, q_prob = 0.5, max_chars = 2
+    n = 200000, q = 200000, q_prob = 0.5, max_chars = 6
+end
