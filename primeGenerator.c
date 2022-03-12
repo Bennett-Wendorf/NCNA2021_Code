@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 void genPrimes(int numPrimes, long* primesArray);
+void genPrimesMultSix(int numPrimes, long* primesArray);
 void writeToFile(FILE* outputFile, int numPrimes, long* primesArray);
 
 int main(int argc, char** argv){
@@ -30,7 +31,7 @@ int main(int argc, char** argv){
         exit(-1);
     }
 
-    genPrimes(numPrimes, primesArray);
+    genPrimesMultSix(numPrimes, primesArray);
     writeToFile(outputFile, numPrimes, primesArray);
 
     if(fclose(outputFile) == EOF){
@@ -57,6 +58,48 @@ void genPrimes(int numPrimes, long* primesArray){
             currPrimes++;
         }
         currNumber++;
+    }
+}
+
+void genPrimesMultSix(int numPrimes, long* primesArray){
+
+    primesArray[0] = 2;
+    primesArray[1] = 3;
+
+    int currPrimes = 2;
+    int currMultiple = 1;
+    int high;
+    int low;
+    int lowNotPrime = 0;
+    int highNotPrime = 0;
+    int i;
+    while(currPrimes < numPrimes){
+        printf("Checking 6 * %d\n", currMultiple);
+        high = (6*currMultiple)+1;
+        low = (6*currMultiple)-1;
+        for(i = 1; i < currPrimes; i++){
+            if(low%primesArray[i]==0){
+                lowNotPrime = 1;
+            }
+            if(high%primesArray[i]==0){
+                highNotPrime = 1;
+            }
+            if(highNotPrime && lowNotPrime)
+                break;
+        }
+        if(!lowNotPrime){
+            // Then we got through the entire loop, and low is a prime
+            primesArray[currPrimes] = low;
+            currPrimes++;
+        }
+        if(!highNotPrime){
+            // Then we got through the entire loop, and low is a prime
+            primesArray[currPrimes] = high;
+            currPrimes++;
+        }
+        currMultiple++;
+        lowNotPrime = 0;
+        highNotPrime = 0;
     }
 }
 

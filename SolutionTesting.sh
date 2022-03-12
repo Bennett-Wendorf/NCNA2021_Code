@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CODE_NAME="LandEquality"
-PROBELM_NAME="landequality"
+CODE_NAME="Concert"
+PROBELM_NAME="concertrehearsal"
 OUTFILE_NAME="tmp.out"
 
 javac $CODE_NAME.java
